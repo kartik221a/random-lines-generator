@@ -1,0 +1,83 @@
+/* Improved CSS code */
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Light gray background */
+}
+
+/* Container Styles */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #333, #666); /* Dark gray gradient background */
+  background-size: 100% 300px;
+  background-position: 0% 100%;
+  transition: background-position 0.5s ease-out; /* Add a smooth transition effect */
+}
+
+.container:hover {
+  background-position: 0% 0%; /* Move the gradient to the top on hover */
+}
+
+/* Box Styles */
+.box {
+  position: relative;
+  width: 75vw;
+  height: 75vh;
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 10px; /* Increased border radius for a softer look */
+  padding: 20px;
+  margin: 0 20px;
+  background-color: #fff; /* White background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  transition: transform 0.3s ease-out; /* Add a smooth transition effect */
+}
+
+.box:hover {
+  transform: scale(1.05); /* Scale up the box on hover */
+}
+
+/* Button Container Styles */
+.button-container {
+  display: flex;
+  align-items: center;
+  bottom: 20px; /* Add some space between the box and buttons */
+  justify-content: center;
+}
+
+/* Button Styles */
+button {
+  position: absolute;
+  bottom: 20px; /* Add some space between the box and buttons */
+  width: 120px;
+  border: none; /* Remove the border */
+  border-radius: 25px; /* Increased border radius for a softer look */
+  background-image: linear-gradient(to bottom, #34A853, #2E865F); /* Green gradient background */
+  color: #fff; /* White text color */
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-image 0.3s ease-out, box-shadow 0.3s ease-out; /* Add a smooth transition effect */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  padding: 10px;
+}
+
+button:hover {
+  background-image: linear-gradient(to bottom, #2E865F, #34A853); /* Reverse the gradient on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Increase the box shadow on hover */
+}
+
+button:active {
+  background-image: linear-gradient(to bottom, #2E865F, #34A853); /* Reverse the gradient on active */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Decrease the box shadow on active */
+  transform: translateY(2px); /* Move the button down on active */
+}
